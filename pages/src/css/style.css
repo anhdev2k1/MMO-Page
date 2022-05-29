@@ -614,7 +614,7 @@ header{
     background:linear-gradient(
         rgba(0, 0, 0, 0.7), 
         rgba(0, 0, 0, 0.7)
-    ), url(./access/images/banner2.png);
+    ), url(/access/images/banner2.png);
     background-size: cover;
 }
 .hero__container{

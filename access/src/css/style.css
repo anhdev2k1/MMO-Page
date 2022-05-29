@@ -404,7 +404,7 @@ header{
     top: 70px;
     left: 70px;
     position: absolute;
-    background: rgba(30, 30, 30, 0.1) url(../../images/phone-ring.png) no-repeat center center;
+    background: rgba(30, 30, 30, 0.1) url(/access/images/phone-ring.png) no-repeat center center;
     -webkit-border-radius: 100%;
     -moz-border-radius: 100%;
     border-radius: 100%;
