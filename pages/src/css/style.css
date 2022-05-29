@@ -351,7 +351,6 @@ header{
     top: 70px;
     left: 70px;
     position: absolute;
-    background: rgba(30, 30, 30, 0.1) url(/access/images/phone-ring.png) no-repeat center center;
     -webkit-border-radius: 100%;
     -moz-border-radius: 100%;
     border-radius: 100%;
@@ -611,10 +610,6 @@ header{
 .hero{
     width: 100%;
     height: 300px;
-    background:linear-gradient(
-        rgba(0, 0, 0, 0.7), 
-        rgba(0, 0, 0, 0.7)
-    ), url(/access/images/banner2.png);
     background-size: cover;
 }
 .hero__container{
