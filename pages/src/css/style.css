@@ -614,7 +614,7 @@ header{
     background:linear-gradient(
         rgba(0, 0, 0, 0.7), 
         rgba(0, 0, 0, 0.7)
-    ), url(/access/images/banner2.png);
+    ), url(../../../access/images/banner2.png);
     background-size: cover;
 }
 .hero__container{
@@ -962,6 +962,7 @@ footer{
     font-size: 1.5rem;
     font-weight: 500;
     padding: 8px 0;
+    color: rgb(65, 64, 64);
 }
 .myform{
     margin-top: 50px;
@@ -988,6 +989,9 @@ textarea{
     text-indent: 8px;
     padding: 8px 0;
     outline: none;
+}
+textarea:focus{
+    border: 1px solid #00aff2
 }
 .btn__submit{
     margin-top: 20px;
