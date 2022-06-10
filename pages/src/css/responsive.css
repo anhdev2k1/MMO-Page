@@ -61,7 +61,7 @@ html{
         top: 95px;
         padding: 10px;
 
-        transform: translateX(-900px);
+        transform: translateX(-1500px);
         transition: .3s;
     }
     #toggle1:checked ~ .header__list {
@@ -124,6 +124,7 @@ html{
         width: 80%;
         
     }
+    
     .input__search > input{
         font-size: 1.8rem;
     }
@@ -180,6 +181,9 @@ html{
         margin: 50px 0;
         
     }
+    .slick-dots{
+        display: none !important;
+    }
     .service__heading,.stats__heading,.heading__reviews{
         font-size: 3rem;
     }
@@ -195,5 +199,5 @@ html{
     .heading__suppport{
         font-size: 3rem !important;
     }
- 
+    
 }

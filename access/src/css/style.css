@@ -28,11 +28,13 @@ img{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 html{
     font-family: 'Roboto', sans-serif;
     font-size: 10px;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 .btn__toTop{
     display: block;
@@ -42,7 +44,7 @@ html{
     line-height: 50px;
     border: 3px solid #86E7D6;
     position: fixed;
-    bottom: 20px;
+    bottom: 65px;
     right: 20px;
     z-index: 88;
     color: #86E7D6;

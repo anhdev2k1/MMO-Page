@@ -32,6 +32,7 @@ html{
     font-family: 'Roboto', sans-serif;
     font-size: 10px;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 .btn__toTop{
     display: block;
@@ -41,7 +42,7 @@ html{
     line-height: 50px;
     border: 3px solid #86E7D6;
     position: fixed;
-    bottom: 20px;
+    bottom: 65px;
     right: 20px;
     z-index: 88;
     color: green;
@@ -632,6 +633,7 @@ header{
     text-transform: uppercase;
     color: white;
     padding-top: 10px;
+    text-align: center;
 }
 
 
@@ -1015,6 +1017,56 @@ textarea:focus{
     outline: 1px solid #00aff2;
 }
 
+.burger-respons .hamburger1 {
+    height: 45px;
+    margin: 10px;
+    display: -ms-grid;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: center;
+    z-index: 120;
+    cursor: pointer;
+  }
+  
+  .burger-respons .hamburger1 div {
+    background-color: white;
+    position: relative;
+    width: 40px;
+    height: 5px;
+    margin-top: 7px;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  #toggle1 {
+    display: none;
+  }
+  
+  #toggle1:checked + .burger-respons .hamburger1 .top {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    margin-top: 22.5px;
+  }
+  
+  #toggle1:checked + .burger-respons .hamburger1 .meat {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    margin-top: -5px;
+  }
+  
+  #toggle1:checked + .burger-respons .hamburger1 .bottom {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  
+  #toggle1:checked ~ .menu1 {
+    height: 340px;
+  }
+  
+
+.burger-respons{
+      display: none;
+}
 
 @media only screen and (min-width: 1070px) and (max-width: 1168px) {
     .header__navbar-main{
@@ -1061,8 +1113,12 @@ textarea:focus{
         top: 0;
         left: 100%;
     }
-   
+    .list__product .card{
+        width: calc( calc(100% / 2) - 30px);
+    }
+    
 }
+
 @media only screen and (max-width: 900px) {
     .hero-heading{
         font-size: 2rem;
@@ -1085,11 +1141,23 @@ textarea:focus{
         width: 100% !important;
         margin-top: 50px;
     }
+
+    /*----FORM---*/
+    .content__img{
+        margin-bottom: 50px;
+    }
 }
 @media only screen  and (max-width: 680px) {
     .input__search{
         width: 80%;
         
+    }
+    .hero-heading{
+        font-size: 1.7rem;
+    }
+    .content-heading{
+        font-size: 2rem !important;
+        line-height: 28.5px;
     }
     .input__search > input{
         font-size: 1.8rem;
@@ -1100,6 +1168,18 @@ textarea:focus{
     
     .item__footer{
         width: calc( calc(100% / 1) - 30px );
+        margin-bottom: 50px;
+    }
+    .list__product .card{
+        width: calc( calc(100% / 1) - 30px);
+    }
+    .list__child{
+        top: 100%;
+        left: 0;
+    }
+    .content__img{
+        width: 380px;
+        height: 380px;
         margin-bottom: 50px;
     }
 }
