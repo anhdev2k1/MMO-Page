@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&family=Ubuntu:wght@300;400;500;700&display=swap');
+::selection {
+    background:#86E7D6; 
+    color:white;
+}
+:root{
+    --color:#436677;
+    --fadeIn : visibility, opacity 0.2s ease-in;
+}
+body{
+    overflow-x: hidden;
+}
+body.disable-scroll{
+    overflow-y:hidden ;
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+
+@media only screen and (min-width: 1070px) and (max-width: 1168px) {
+    .header__navbar-main{
+        display: flex;
+        flex-direction: column;
+    }
+    .header__list{
+        padding: 30px 0;
+    }
+    
+}
+@media only screen and (max-width : 1070px){
+    
+    .burger-respons{
+        display: block;
+    }
+    .header__list{
+        display: block; 
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        background-image: radial-gradient(
+        circle farthest-corner at 92.3% 71.5%,
+        rgba(83, 138, 214, 1) 0%,
+        rgba(134, 231, 214, 1) 90%
+    );
+        top: 95px;
+        padding: 10px;
+
+        transform: translateX(-900px);
+        transition: .3s;
+    }
+    #toggle1:checked ~ .header__list {
+        transform: translateX(0);
+        transition: .3s;
+    }
+    .header__list .list__item{
+        width: max-content;
+        margin-bottom: 30px;
+        height: max-content;
+
+    }
+    .list__child{
+        top: 0;
+        left: 100%;
+    }
+   
+}
+@media only screen  and (max-width: 768px) {
+    .input__search{
+        flex: 1;
+    }
+    .btn__search{
+        width: 70px;
+        height: 70px;
+    }
+    .burger-respons{
+        display: block;
+    }
+    
+    .list__child{
+        top: 120%;
+        left: 0;
+    }
+    
+    .list__child span{
+        font-size: 1.5rem;
+    }
+    
+    .about__container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .about__img{
+        width: 60%;
+        margin-bottom: 50px;
+    }
+    .about__title{
+        text-align: center;
+    }
+    .about__btn{
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+    
+}
+@media only screen  and (max-width: 680px) {
+    .input__search{
+        width: 80%;
+        
+    }
+    .input__search > input{
+        font-size: 1.8rem;
+    }
+    .fa-magnifying-glass{
+        padding-right: 30px;
+    }
+    .featured__item,.service__item{
+        width: calc( calc(100% / 2) - 30px );
+        margin: 50px 0;
+        
+    }
+    .featured__item:last-child{
+        margin: 0 auto;
+    }
+    .stats__list{
+        display: flex;
+        flex-direction: column;
+    }
+    .counter{
+        font-size: 6rem !important;
+    }
+    .slats__item{
+       margin-bottom: 50px;
+       text-align: center;
+    }
+    .list__product .card{
+        width: calc( calc(100% / 2) - 30px );
+    }
+    .slick-slide{
+        display: flex;
+        flex-direction: column;
+    }
+    .slide__review--img{
+        width: 60%;
+    }
+    .item__support--img{
+        width: calc( calc(100% / 5) - 30px );
+        padding: 10px;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .item__footer{
+        width: calc( calc(100% / 1) - 30px );
+        margin-bottom: 50px;
+    }
+}
+
+@media only screen  and (max-width: 480px) {
+    .about__img{
+        width: 80%;
+    }
+    .featured__item,.service__item{
+        width: calc( calc(100% / 1) - 30px );
+        margin: 50px 0;
+        
+    }
+    .service__heading,.stats__heading,.heading__reviews{
+        font-size: 3rem;
+    }
+    .service__desc{
+        font-size: 1.5rem;
+    }
+    .counter{
+        font-size: 4rem !important;
+    }
+    .list__product .card{
+        width: calc( calc(100% / 1) - 30px );
+    }
+    .heading__suppport{
+        font-size: 3rem !important;
+    }
+ 
+}
